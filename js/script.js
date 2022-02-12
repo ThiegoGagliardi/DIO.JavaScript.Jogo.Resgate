@@ -11,12 +11,12 @@ function start(){
     $("#telaJogo").append("<div id='placar'></div>");
     $("#telaJogo").append("<div id='energia'></div>"); 
     
-    var somDisparo=document.getElementById("somDisparo");
-    var somExplosao=document.getElementById("somExplosao");
-    var musica=document.getElementById("musica");
-    var somGameover=document.getElementById("somGameover");
-    var somPerdido=document.getElementById("somPerdido");
-    var somResgate=document.getElementById("somResgate");
+    var somDisparo  = document.getElementById("somDisparo");
+    var somExplosao = document.getElementById("somExplosao");
+    var musica      = document.getElementById("musica");
+    var somGameover = document.getElementById("somGameover");
+    var somPerdido  = document.getElementById("somPerdido");
+    var somResgate  = document.getElementById("somResgate");
     
     musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
     musica.play();    
@@ -63,7 +63,7 @@ function start(){
         gameOver(jogo);
 
         if (!jogo.podeAtirar) {
-           moveDisparo(jogo);
+          moveDisparo(jogo);
         }
 
         let inimigo2X = parseInt($("#inimigo2").css("left"));
